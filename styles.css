@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: red;
+    background-color: rgb(216, 213, 214);
     background-position: center;
     color: #333;
     margin: 0;
@@ -17,26 +17,55 @@ body {
     text-align: center;
 }
 
-button {
+#gallery button {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%); 
+    z-index: 3; 
     padding: 10px 20px;
-    margin: 20px 0;
-    cursor: pointer;
-    background-color: #3498db;
+    background-color: #2e3bccaf;
     color: white;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
     transition: background-color 0.3s ease;
 }
-
-button:hover {
-    background-color: #29b93f;
+#gallery button:hover {
+    background-color: #fff;
+    color: #2e3bccaf;
+    border: 1px solid #2e3bccaf;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 #gallery {
-    margin-top: 30px;
     position: relative;
     width: 100%;
-    height: 500px;
+    height: 400px;
+    margin-inline-start: auto;
+}
+
+#gallery h1 {
+    position: absolute;
+    top: 10%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    z-index: 2; 
+}
+
+#gallery::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px; 
+    z-index: 1;
 }
 
 .gallery-image {
@@ -48,6 +77,7 @@ button:hover {
     top: 0;
     left: 0;
     display: none;
+    z-index: 0;
 }
 
 
@@ -70,7 +100,10 @@ button:hover {
 }
 
 .tab-btn:hover {
-    background-color: #27ae60;
+    background-color: #fff;
+    color: #2e3bccaf;
+    border: 1px solid #2e3bccaf;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .tab-content {

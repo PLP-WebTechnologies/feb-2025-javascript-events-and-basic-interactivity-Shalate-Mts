@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Event to change text on button click
     document.getElementById("changeTextBtn").addEventListener("click", function() {
-        document.getElementById("title").innerText = "We love Web Development!🤩";
+        document.getElementById("title").innerText = "Unleash Your Inner Baker!";
     });
 
     // Image gallery navigation (automatic slideshow)
@@ -85,6 +85,6 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
 
     // Double-click secret action
     document.addEventListener('dblclick', function() {
-        alert('Hooray!!! You found the secret action!🥳🥳🎉🎉');
+        alert("Hooray!!! You'll be a great baker! Keep it up!");
     });
 });

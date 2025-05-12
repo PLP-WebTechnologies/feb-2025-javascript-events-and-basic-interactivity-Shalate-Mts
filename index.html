@@ -3,18 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> WebDev Week 6 Assignment</title>
+    <title> WebDev Week 6</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 
-    <div class="container">
-        <h1 id="title">Welcome to My Week 6 Web Dev Assignment</h1>
-        <button id="changeTextBtn">Click to change text!</button>
-
-    
+    <div class="container">    
         <div id="gallery">
+            <h1 id="title">Let's Learn To Bake!</h1>
+            <button id="changeTextBtn">New Heading</button>
             <img src="https://images.pexels.com/photos/227432/pexels-photo-227432.jpeg?auto=compress&cs=tinysrgb&w=400pexels-eberhardgross-1287145.jpg" alt="Image 1" class="gallery-image">
             <img src="https://images.pexels.com/photos/1005405/pexels-photo-1005405.jpeg?auto=compress&cs=tinysrgb&w=400pexels-ene-marius-241207761-31777118.jpg" alt="Image 2" class="gallery-image" style="display: none;">
             <img src="https://images.pexels.com/photos/5623616/pexels-photo-5623616.jpeg?auto=compress&cs=tinysrgb&w=40034027.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Image 3" class="gallery-image" style="display: none;">
@@ -23,12 +21,74 @@
 
         
         <div class="tabs">
-            <button class="tab-btn" data-tab="aboutMe">About Me</button>
-            <button class="tab-btn" data-tab="projects">Projects</button>
+            <button class="tab-btn" data-tab="describe">Description</button>
+            <button class="tab-btn" data-tab="recipe">Recipes</button>
             <button class="tab-btn" data-tab="contact">Contact</button>
 
-            <div id="aboutMe" class="tab-content">This is the About Me section.</div>
-            <div id="projects" class="tab-content">This is the Projects section.</div>
+            <div id="describe" class="tab-content">
+                <h3>Baking for Beginners</h3>
+                <p>
+                    The perfect place to start your sweet journey into the world of baking!
+                    Whether you're looking to make your first batch of cookies or try a simple
+                    loaf of bread, this page offers easy-to-follow recipes, tips, and tricks 
+                    that anyone can master. With straightforward instructions and minimal 
+                    ingredients, you'll be whipping up delicious treats in no time. 
+                    No fancy tools or experience required—just a love for good food and a little bit of fun!
+                </p>
+            </div>
+            <div id="recipe" class="tab-content">
+                <h3>Easy recipes to start your journey</h3>
+                <table>
+                    <tr>
+                        <th>Chocolate Chip Cookies</th>
+                        <th>Banana Bread</th>
+                    </tr>
+                    <tr>
+                        <td><h5>Ingredients:</h5>
+                            <ul>
+                                <li>1 cup butter (softened)</li>
+                                <li>1 cup sugar</li>
+                                <li>1 egg</li>
+                                <li>1 1/2 cups flour</li>
+                                <li>1 tsp baking soda</li>
+                                <li>1 cup chocolate chips</li>
+                            </ul>
+                        </td>
+                        <td><h5>Ingredients:</h5>
+                            <ul>
+                                <li>2 ripe bananas (mashed)</li>
+                                <li>1 cup sugar</li>
+                                <li>1 egg</li>
+                                <li>1 cup flour</li>
+                                <li>1 tsp baking soda</li>
+                                <li>1/2 cup walnuts (optional)</li>
+                            </ul>
+                        </td>   
+                    </tr>
+                    <tr>
+                        <td><h5>Instructions:</h5>
+                            <ul>
+                                <li>Preheat the oven to 350°F (175°C)</li>
+                                <li>Mix wet ingredients together till smooth.</li>
+                                <li>Add all dry ingredients and mix well.</li>
+                                <li>Scoop dough onto a baking sheet.</li>
+                                <li>Bake for 10-12 minutes until golden.</li>
+                                <li>Cool and enjoy!</li>
+                            </ul>
+                        </td> 
+                        <td><h5>Instructions:</h5>
+                            <ul>
+                                <li>Preheat the oven to 350°F (175°C).</li>
+                                <li>Mash the bananas and mix with sugar and egg.</li>
+                                <li>Add flour and baking soda and stir till combined.</li>
+                                <li>Grease pan and pur dough.</li>
+                                <li>Bake for 50-60 minutes.</li>
+                                <li>Cool and slice!<li>
+                            </ul>
+                        </td>                   
+                     </tr>
+                </table>
+            </div>
             <div id="contact" class="tab-content">
                 <form id="contactForm">
                     <label for="name">Name</label>
